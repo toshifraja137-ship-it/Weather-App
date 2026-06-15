@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="hero">
+            <div class="hero-copy">
+                <h1>Weather App</h1>
+                <p>Fast, elegant weather updates for any city in the world.</p>
+            </div>
+        </div>
+
+        <div class="search-panel">
+            <input type="text" id="city" placeholder="Enter city name" autocomplete="off">
+            <button id="search">Search</button>
+        </div>
+
+        <div class="unit-switch">
+            <button id="celsiusBtn" class="unit active">°C</button>
+            <button id="fahrenheitBtn" class="unit">°F</button>
+        </div>
+
+        <div class="weather-card">
+            <div class="weather-card__header">
+                <div class="weather-card__title">
+                    <h2 id="cityName"></h2>
+                    <span class="badge">Live</span>
+                </div>
+                <div id="weatherIcon" class="weather-icon">☁️</div>
+            </div>
+
+            <p id="temp"></p>
+            <p id="humidity"></p>
+            <p id="status" class="status"></p>
+            <p id="message" class="error"></p>
+            <p id="reply"></p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
